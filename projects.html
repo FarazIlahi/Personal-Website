@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Faraz Ilahi's software development and data analysis projects." />
+  <title>Projects | Faraz Ilahi</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Faraz Ilahi home"><span
+          class="brand-mark">F<span>·</span>I</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+        aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link" href="index.html">Home</a><a class="nav-link active" href="projects.html">Projects</a><a
+          class="nav-link" href="about.html">About</a><a class="nav-link" href="contact.html">Contact</a><button
+          class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+          <span>☼</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="page-hero container">
+      <p class="eyebrow">FIELD LOG / 01</p>
+      <h1>Projects &amp; <span class="accent-text">experiments.</span></h1>
+      <p class="page-intro">
+        A collection of things I've built, questions I've explored, and skills
+        I'm developing. Some are data-focused; others come from my software
+        engineering background.
+      </p>
+      <div>
+        LAST UPDATED: <span data-year></span> <span>✦</span> ALWAYS IN
+        PROGRESS
+      </div>
+    </section>
+
+    <section class="container">
+      <div role="group" aria-label="Filter projects">
+        <span>SORT BY TYPE</span>
+        <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">
+          All projects
+        </button>
+        <button class="filter-button" type="button" data-filter="data" aria-pressed="false">
+          Data analysis
+        </button>
+        <button class="filter-button" type="button" data-filter="software" aria-pressed="false">
+          Software
+        </button>
+        <button class="filter-button" type="button" data-filter="web" aria-pressed="false">
+          Web development
+        </button>
+      </div>
+      <p class="filter-status" aria-live="polite"></p>
+      <div class="project-grid project-page-grid">
+        <article class="project-card" data-category="data" id="ecommerce">
+          <div class="project-visual visual-sql">
+            <span class="visual-tag">SQL / ANALYTICS</span>
+            <div>
+              <span style="height: 30%"></span><span style="height: 45%"></span><span style="height: 38%"></span><span
+                style="height: 68%"></span><span style="height: 56%"></span><span style="height: 92%"></span>
+            </div>
+            <span class="visual-caption">REVENUE / PRODUCT TRENDS</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span>DATA ANALYSIS</span>
+            </div>
+            <h2>E-Commerce Data Analysis</h2>
+            <p>
+              Analyzed e-commerce transaction data to evaluate revenue,
+              product performance, and customer behavior.
+            </p>
+            <h3>What I explored</h3>
+            <ul class="project-bullets">
+              <li>SQL joins, grouping, CASE statements, and CTEs.</li>
+              <li>
+                Top-performing products, revenue trends, and customer
+                segments.
+              </li>
+              <li>
+                Structuring findings for future visualization and reporting.
+              </li>
+            </ul>
+            <div class="tag-row">
+              <span>SQL</span><span>CTEs</span><span>Data exploration</span>
+            </div>
+            <a class="text-link" href="https://github.com/FarazIlahi/ecommerce-sql-analysis" target="_blank"
+              rel="noopener noreferrer">Find
+              code on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="data" id="insurance">
+          <div class="project-visual">
+            <span class="visual-tag">SQL / INSIGHTS</span>
+            <div>
+              <span>DATA<br />POINTS</span>
+            </div>
+            <span class="visual-caption">COSTS / SEGMENTS / PATTERNS</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span>DATA ANALYSIS</span>
+            </div>
+            <h2>Medical Insurance Data Analysis</h2>
+            <p>
+              Used SQL to segment insurance records and explore factors
+              associated with insurance charges.
+            </p>
+            <h3>What I explored</h3>
+            <ul class="project-bullets">
+              <li>
+                CASE statements and CTEs to group records by age and BMI.
+              </li>
+              <li>Differences in charges between smokers and non-smokers.</li>
+              <li>Turning query results into clear observations.</li>
+            </ul>
+            <div class="tag-row">
+              <span>SQL</span><span>Data segmentation</span><span>Analysis</span>
+            </div>
+            <a class="text-link" href="https://github.com/FarazIlahi/insurance-sql-analysis" target="_blank"
+              rel="noopener noreferrer">Find
+              code on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="data software" id="discord-bot">
+          <div class="project-visual visual-terminal">
+            <span class="visual-tag">PYTHON / SQL</span>
+            <div>
+              <p><span>&gt;</span> collect_event()</p>
+              <p><span>&gt;</span> store_record()</p>
+              <p>✓ saved to database</p>
+            </div>
+            <span class="visual-caption">EVENTS / DATABASE / LOGS</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span>DATA SYSTEM</span>
+            </div>
+            <h2>Discord Bot Data Logging System</h2>
+            <p>
+              Designed a database-backed system to collect and store user
+              activity data for potential future analysis.
+            </p>
+            <h3>What I built</h3>
+            <ul class="project-bullets">
+              <li>Designed a relational database schema.</li>
+              <li>Implemented data storage logic with Python and SQL.</li>
+              <li>Created a foundation for analyzing activity patterns.</li>
+            </ul>
+            <div class="tag-row">
+              <span>Python</span><span>SQL</span><span>Databases</span>
+            </div>
+            <a class="text-link" href="https://github.com/FarazIlahi/Gamebot" target="_blank"
+              rel="noopener noreferrer">Find
+              code on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="software" id="rpg">
+          <div class="project-visual visual-rpg">
+            <span class="visual-tag">JAVA / FIREBASE</span>
+            <div>
+              <b>QUEST<br />LOG</b>
+            </div>
+            <span class="visual-caption">PARTY QUEST / SAVE DATA</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span>SOFTWARE</span>
+            </div>
+            <h2>D&amp;D-Style RPG Game</h2>
+            <p>
+              A collaborative role-playing game developed by a five-person
+              Scrum team.
+            </p>
+            <h3>What I contributed</h3>
+            <ul class="project-bullets">
+              <li>
+                Designed and implemented game logic and Firebase data
+                persistence.
+              </li>
+              <li>Built interactive UI elements using JavaFX and CSS.</li>
+              <li>
+                Used GitHub and weekly sprint meetings to coordinate team
+                work.
+              </li>
+            </ul>
+            <div class="tag-row">
+              <span>JavaFX</span><span>Firebase</span><span>CSS</span><span>Scrum</span>
+            </div>
+            <!-- TODO: Add the specific features you personally implemented and repository URL. -->
+            <a class="text-link" href="https://github.com/FarazIlahi/dnd_game" target="_blank"
+              rel="noopener noreferrer">Find
+              code on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="software" id="platformer">
+          <div class="project-visual">
+            <span class="visual-tag">UNITY / C#</span>
+            <div>
+              <b>TUTORIAL<br />PROJECT</b>
+            </div>
+            <span class="visual-caption">MOVEMENT / PHYSICS / COLLECTIBLES</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span>GAME DEVELOPMENT</span>
+            </div>
+            <h2>2D Mobile Platformer</h2>
+            <p>
+              A side-scrolling platformer prototype built to practice Unity
+              fundamentals and C# scripting.
+            </p>
+            <h3>What I worked on</h3>
+            <ul class="project-bullets">
+              <li>Player movement and physics.</li>
+              <li>Collectibles and core gameplay interactions.</li>
+              <li>Deployment of the prototype to Android.</li>
+            </ul>
+            <div class="tag-row">
+              <span>Unity</span><span>C#</span><span>Android</span>
+            </div>
+            <a class="text-link" href="https://github.com/FarazIlahi/2D-Platformer" target="_blank"
+              rel="noopener noreferrer">Find
+              code on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web software" id="internship">
+          <div class="project-visual visual-webapp">
+            <span class="visual-tag">REACT / NODE.JS</span>
+            <div>
+              <div class="webapp-window-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+              <div><b>WEB APP</b></div>
+            </div>
+            <span class="visual-caption">INTERNSHIP / WEB DEVELOPMENT</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span>PROFESSIONAL EXPERIENCE</span>
+            </div>
+            <h2>Software Engineering Internship</h2>
+            <p>
+              Frontend web development internship during Summer 2026, working
+              with React and Node.js.
+            </p>
+            <h3>Experience highlights</h3>
+            <ul class="project-bullets">
+              <li>
+                Company:
+                <strong>Kelm Academy</strong>
+              </li>
+              <li>
+                Tools:
+                React, Node.js, Figma, JSON
+              </li>
+            </ul>
+            <div class="tag-row">
+              <span>React</span><span>Node.js</span><span>Web development</span>
+            </div>
+            <a class="text-link" href="contact.html">Ask me about this experience
+              <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+      <div hidden id="no-projects">
+        No projects match that category yet. Try another filter.
+      </div>
+      <p class="projects-note">
+        <span class="eyebrow">UP NEXT</span>
+        <strong>More projects coming soon</strong>
+      </p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">F<span>·</span>I</span></a>
+      <p>Built with curiosity, HTML, CSS &amp; JavaScript.</p>
+      <p>© <span data-year></span> Faraz Ilahi</p>
+    </div>
+  </footer>
+</body>
+
+</html>
